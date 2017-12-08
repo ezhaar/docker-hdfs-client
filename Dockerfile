@@ -24,7 +24,7 @@ ENV HADOOP_PREFIX /hadoop-2.7.4
 ENV HADOOP_CONF_DIR /hadoop-2.7.4/etc/hadoop
 ENV JAVA_HOME /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.151-1.b12.el7_4.x86_64/jre
 ENV PATH $PATH:$JAVA_HOME/bin:/hadoop-2.7.4/bin:/hadoop-2.7.4/sbin
-
+USER hdfs 
 # Define default command.
 CMD ["bash"]
 
